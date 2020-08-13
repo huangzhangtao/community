@@ -1,4 +1,5 @@
-package com.hzt.community.Config;
+package com.hzt.community.config;
+
 
 import com.hzt.community.controller.interceptor.LoginRequiredInterceptor;
 import com.hzt.community.controller.interceptor.LoginTicketInterceptor;

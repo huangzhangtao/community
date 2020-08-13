@@ -14,7 +14,7 @@ import javax.mail.internet.MimeMessage;
 @Component
 public class MailClient {
 
-    private static final  Logger logger = LoggerFactory.getLogger(MailClient.class);
+    private static final Logger logger = LoggerFactory.getLogger(MailClient.class);
 
     @Autowired
     private JavaMailSender mailSender;
@@ -37,4 +37,3 @@ public class MailClient {
     }
 
 }
-

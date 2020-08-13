@@ -8,6 +8,7 @@ import java.util.List;
 
 @Mapper
 public interface DiscussPostMapper {
+
     List<DiscussPost> selectDiscussPosts(int userId, int offset, int limit);
 
     // @Param注解用于给参数取别名,
@@ -19,12 +20,5 @@ public interface DiscussPostMapper {
     DiscussPost selectDiscussPostById(int id);
 
     int updateCommentCount(int id, int commentCount);
-
-    int updateType(int id, int type);
-
-    int updateStatus(int id, int status);
-
-    int updateScore(int id, double score);
-
 
 }

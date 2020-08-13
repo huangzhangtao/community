@@ -3,6 +3,7 @@ package com.hzt.community.entity;
 import java.util.Date;
 
 public class User {
+
     private int id;
     private String username;
     private String password;
@@ -96,7 +97,7 @@ public class User {
 
     @Override
     public String toString() {
-        return "user{" +
+        return "User{" +
                 "id=" + id +
                 ", username='" + username + '\'' +
                 ", password='" + password + '\'' +
@@ -109,4 +110,5 @@ public class User {
                 ", createTime=" + createTime +
                 '}';
     }
+
 }

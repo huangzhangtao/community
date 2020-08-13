@@ -1,6 +1,5 @@
 package com.hzt.community.controller;
 
-
 import com.google.code.kaptcha.Producer;
 import com.hzt.community.entity.User;
 import com.hzt.community.service.UserService;
@@ -114,7 +113,7 @@ public class LoginController implements CommunityConstant {
         // 检查账号,密码
         int expiredSeconds = rememberme ? REMEMBER_EXPIRED_SECONDS : DEFAULT_EXPIRED_SECONDS;
         Map<String, Object> map = userService.login(username, password, expiredSeconds);
-        if (map.containsKey("ticket")) { //是否包含ticket这个KEY
+        if (map.containsKey("ticket")) {
             Cookie cookie = new Cookie("ticket", map.get("ticket").toString());
             cookie.setPath(contextPath);
             cookie.setMaxAge(expiredSeconds);

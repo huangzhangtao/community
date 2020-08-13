@@ -1,4 +1,4 @@
-package com.hzt.community.Config;
+package com.hzt.community.config;
 
 import com.google.code.kaptcha.Producer;
 import com.google.code.kaptcha.impl.DefaultKaptcha;

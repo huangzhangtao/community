@@ -18,16 +18,12 @@ import java.util.Map;
 
 @Controller
 public class HomeController {
+
     @Autowired
     private DiscussPostService discussPostService;
 
     @Autowired
     private UserService userService;
-
-    @RequestMapping(path = "/", method = RequestMethod.GET)
-    public String root() {
-        return "forward:/index";
-    }
 
     @RequestMapping(path = "/index", method = RequestMethod.GET)
     public String getIndexPage(Model model, Page page) {
@@ -51,5 +47,9 @@ public class HomeController {
         return "/index";
     }
 
+    @RequestMapping(path = "/error", method = RequestMethod.GET)
+    public String getErrorPage() {
+        return "/error/500";
+    }
 
 }
